@@ -1,0 +1,24 @@
+body {
+	font-family: system-ui;
+}
+
+label {
+	display: inline-block;
+	width: 250px;
+}
+
+button{
+	width: 250px;
+	height: 30px;
+	color: white;
+	background-color: lightblue;
+	border: none;
+}
+
+#parameters {
+	display: inline-block;
+}
+
+#dibujo {
+	display: inline-block;
+}

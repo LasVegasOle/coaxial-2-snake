@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coaxial#2</title>
+		<link href="coaxial-css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>COAXIAL#2</h1>
+
+	<div id="dibujo">
+		<canvas id="drawing" width="200" height="200"></canvas>
+	</div>
+
+	<div id="parameters">
+		<h2>Snake info:</h2>
+ 		<div>
+			<label class="field" for="snake_width">Snake width: [<em>mm</em>]:</label>
+			<input id="snake_width" type ="number" value="100"/>
+		</div>	      
+ 		<div>
+			<label class="field" for="snake_turns">Snake turns: [<em>#</em>]:</label>
+			<input id="snake_turns" type ="number" value="5"/>
+		</div>
+
+ 		<div>
+			<label class="field" for="snake_turns_length">Snake turn length: [<em>mm</em>]:</label>
+			<input id="snake_turns_length" type ="number" value="30"/>
+		</div>
+    
+		<h2>Printing params:</h2>
+ 		<div>
+			<label class="field" for="initial_height">Initial height [<em>mm</em>]:</label>
+			<input id="initial_height" type ="number" value="5"/>
+		</div>
+ 		<div>
+			<label class="field" for="travel_feedrate">Travel feedrate [<em>mm/min</em>]:</label>
+			<input id="travel_feedrate" type ="number" value="6000"/>
+		</div>
+		<div>
+			<label class="field" for="build_up_pause">Build up pressure pause [<em>s</em>]:</label>
+			<input id="build_up_pause" type ="number" value="0.5"/>
+		</div>	
+		<div>
+			<label class="field" for="release_pause">Release pressure pause [<em>s</em>]:</label>
+			<input id="release_pause" type ="number" value="0.5"/>
+		</div>	
+
+		<div>
+			<button id="gcode" onclick="createFile();">GCode</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/coaxial-2-snake.js"></script>
+	<script type="text/javascript" src="js/FileSaver.js"></script>
+	
+</body>
+</html>
